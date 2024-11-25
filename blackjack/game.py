@@ -39,6 +39,7 @@ class BlackjackGame:
                 player.lose_bet()
                 self.dealer.hand = []
 
+
             elif player.get_hand_value(hand) == 21 and len(player.hand) == 2:
                 print(f"Hand {i + 1} of ", f"{player.name} has Blackjack!")
                 player.win_bet(blackjack=True)
